@@ -15,23 +15,19 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
-                {{#if logged_in}}
                 <li><a href="#" id="logout">Logout</a></li>
-                {{else}}
-                <li><a href="/login">Login</a></li>
-                {{/if}}
             </ul>
         </nav>
     </header>
     <main>
+        <h2>Your Dashboard</h2>
+         <li><a href="/dashboard/new">Create New Blog Post</a></li>
         {{{ body }}}
     </main>
     <footer>
         <h2>Add Luke's Footer Details Here...</h2>
     </footer>
-    {{#if logged_in}}
-    <script src="../../public/js/logout.js"></script>
-    {{/if}}
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>
